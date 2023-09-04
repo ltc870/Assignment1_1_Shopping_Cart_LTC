@@ -40,5 +40,7 @@ public class Application {
     System.out.println(("Remove item from the cart: " + cart.remove().getName()));
     System.out.println("Remove a particular item: " + cart.remove(flatScreenTV));
     System.out.println("What's currently in the cart?: " + Arrays.toString(cart.displayCart()));
+    cart.clear();
+    System.out.println("What's currently in the cart?: " + Arrays.toString(cart.displayCart()));
   }
 }
