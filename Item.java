@@ -1,43 +1,55 @@
-
 public class Item {
-	
-	 private String name;
-	  private double price;
-	  private String description;
 
-	  public Item() {
-	    name = "";
-	    price = 0.0;
-	    description = "";
-	  }
+  // field data members
+  private String name;
+  private double price;
 
-	  public Item(String name, double price, String description) {
-	    this.name = name;
-	    this.price = price;
-	    this.description = description;
-	  }
+  // empty argument constructor
+  public Item() {
+    name = "";
+    price = 0.0;
+  }
 
-	  public String getName() {
-	    return name;
-	  }
+  // preferred constructor
+  public Item(String name, double price) {
+    this.name = name;
+    this.price = price;
+  }
 
-	  public void setName(String name) {
-	    this.name = name;
-	  }
+  /**
+   * Get the name of the Item
+   * 
+   * @return String
+   */
+  public String getName() {
+    return name;
+  }
 
-	  public double getPrice() {
-	    return price;
-	  }
+  /**
+   * Set the name of the Item
+   * 
+   * @param name
+   */
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	  public void setPrice(double price) {
-	    this.price = price;
-	  }
+  /**
+   * Get the price of the item
+   * 
+   * @return double
+   */
+  public double getPrice() {
+    return price;
+  }
 
-	  public String getDescription() {
-	    return description;
-	  }
+  /**
+   * Set the price of the item
+   * 
+   * @param price
+   */
+  public void setPrice(double price) {
+    this.price = price;
+  }
 
-	  public void setDescription(String description) {
-	    this.description = description;
-	  }
 }

@@ -65,11 +65,11 @@ public final class ResizableArrayBag<T> implements BagInterface<T> {
     return true;
   } // end add
 
- /**
-  * Retrieves all entries that are in this bag.
-  * 
-  * @return A newly allocated array of all the entries in this bag.
-  */
+  /**
+   * Retrieves all entries that are in this bag.
+   * 
+   * @return A newly allocated array of all the entries in this bag.
+   */
   public T[] toArray() {
     checkintegrity();
 
@@ -165,7 +165,7 @@ public final class ResizableArrayBag<T> implements BagInterface<T> {
   // Locates a given entry within the array bag.
   // Returns the index of the entry, if located,
   // or -1 otherwise.
-  // Precondition: checkIntegrity has been called.
+  // Precondition: checkintegrity has been called.
   private int getIndexOf(T anEntry) {
     int where = -1;
     boolean found = false;
@@ -188,7 +188,7 @@ public final class ResizableArrayBag<T> implements BagInterface<T> {
   // Removes and returns the entry at a given index within the array.
   // If no such entry exists, returns null.
   // Precondition: 0 <= givenIndex < numberOfEntries.
-  // Precondition: checkIntegrity has been called.
+  // Precondition: checkintegrity has been called.
   private T removeEntry(int givenIndex) {
     T result = null;
 
@@ -227,7 +227,5 @@ public final class ResizableArrayBag<T> implements BagInterface<T> {
   private void checkintegrity() {
     if (!integrityOK)
       throw new SecurityException("ArrayBag object is corrupt.");
-  } // end checkIntegrity
+  } // end checkintegrity
 } // end ResizableArrayBag
-
-
