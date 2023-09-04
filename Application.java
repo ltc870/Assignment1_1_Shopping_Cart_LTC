@@ -27,6 +27,7 @@ public class Application {
     Item basketball = new Item("Basketball", 6.99);
     System.out.println("Was an item added?: " + cart.addItem(basketball));
     System.out.println("Was an item added?: " + cart.addItem(basketball));
+    System.out.println("How many items are in the cart?: " + cart.getCurrentSize());
 
     System.out.println("Get the total price of cart: " + dFormat.format(cart.getTotalCartPrice()));
     System.out.println("Display the items in the cart: " + Arrays.toString(cart.displayCart()));
